@@ -6,6 +6,7 @@
   --secondary-txt-cl: #434455;
   --white-txt-cl: #ffffff;
   --cloud-cl: #f4f4fd;
+  --modal-cl: #2e2f4266;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -506,18 +507,19 @@ ul {
 }
 .subscribe-label {
   display: flex;
-  padding-right: 24px;
+  margin-right: 24px;
 }
 .subscribe-input {
   min-width: 264px;
   height: 40px;
+  padding: 8px 16px;
   color: var(--white-txt-cl);
   background-color: transparent;
   border: 1px solid var(--white-txt-cl);
   border-radius: 4px;
 }
 
-.subscribe-wrapper {
+.subscribe-form {
   display: flex;
 }
 .subscribe-btn {
@@ -529,6 +531,7 @@ ul {
   gap: 16px;
   width: 165px;
   height: 40px;
+  border: 0;
   color: var(--white-txt-cl);
   background-color: var(--iris-cl);
   border-radius: 4px;
@@ -561,7 +564,7 @@ ul {
   pointer-events: none;
 }
 .modal {
-  padding: 24px;
+  padding: 72px 24px 24px;
   position: absolute;
   top: calc(50%);
   left: calc(50%);
@@ -608,7 +611,6 @@ ul {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-title {
-  padding-top: 72px;
   text-align: center;
   color: var(--main-txt-cl);
 }
@@ -617,6 +619,7 @@ ul {
   margin-bottom: 4px;
   font-size: 12px;
   letter-spacing: 0.01em;
+  color: var(--modal-cl);
 }
 .form-wrapper {
   position: relative;
@@ -627,7 +630,7 @@ ul {
   height: 40px;
   padding: 0;
   padding-left: 38px;
-  border: 1px solid var(--main-txt-cl);
+  border: 1px solid var(--modal-cl);
   border-radius: 4px;
   transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -649,13 +652,13 @@ ul {
   font-size: 12px;
   line-height: 1.17px;
   letter-spacing: 0.04em;
-  color: var(--main-txt-cl);
   padding: 16px;
   margin-bottom: 16px;
   display: block;
   min-width: 360px;
   min-height: 120px;
   resize: none;
+  border-color: var(--modal-cl);
   border-radius: 4px;
   transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -673,7 +676,7 @@ ul {
   font-size: 12px;
   line-height: 1.17px;
   letter-spacing: 0.04em;
-  color: var(--main-txt-cl);
+  color: #8e8f99;
 }
 .form-agreement-link {
   color: var(--iris-cl);

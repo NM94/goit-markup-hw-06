@@ -541,23 +541,21 @@
         </div>
         <div class="subscribe-container">
           <p class="social-footer-txt">Subscribe</p>
-          <form>
-            <div class="subscribe-wrapper">
-              <label class="subscribe-label" for="">
-                <input
-                  class="subscribe-input"
-                  type="email"
-                  name="subscribe"
-                  placeholder="E-mail"
-                />
-              </label>
-              <button class="subscribe-btn" type="submit">
-                <svg class="subscribe-icon" width="24" height="24">
-                  <use href="./images/icons.svg#subscribe-icon"></use>
-                </svg>
-                Subscribe
-              </button>
-            </div>
+          <form class="subscribe-form">
+            <label class="subscribe-label" for="">
+              <input
+                class="subscribe-input"
+                type="email"
+                name="subscribe"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="subscribe-btn" type="submit">
+              <svg class="subscribe-icon" width="24" height="24">
+                <use href="./images/icons.svg#subscribe-icon"></use>
+              </svg>
+              Subscribe
+            </button>
           </form>
         </div>
       </div>
@@ -610,7 +608,7 @@
             rows="10"
             placeholder="Text input"
           ></textarea>
-          <label class="form-agreement" for="">
+          <label class="form-agreement">
             <input
               class="form-check-input"
               type="checkbox"
